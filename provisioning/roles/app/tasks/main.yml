@@ -1,0 +1,11 @@
+---
+
+- name: create app directory
+  file: >
+    path="/var/www/{{ app_name }}"
+    owner={{ app_user }}
+    group={{ app_user }}
+    state=directory
+  sudo: yes
+  tags:
+    - app_bootstrap

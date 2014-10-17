@@ -1,0 +1,14 @@
+---
+
+- name: add nodejs apt repository
+  apt_repository: repo=ppa:chris-lea/node.js state=present
+  sudo: yes
+  tags:
+    - web_install
+
+- name: ensure nodejs latest stable is installed
+  apt: pkg=nodejs state=latest
+  sudo: yes
+  tags:
+    - web_install
+

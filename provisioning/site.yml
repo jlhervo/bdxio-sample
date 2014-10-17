@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  remote_user: "{{ app_user }}"
+  roles:
+    - { role: common,   sudo: yes, tags: ['common'] }
+    - { role: database, sudo: yes, tags: ['db'] }
+    - { role: web,      tags: ['web'] }
+    - { role: app,      tags: ['app'] }
+

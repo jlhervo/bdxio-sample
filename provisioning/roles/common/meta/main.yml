@@ -1,0 +1,11 @@
+---
+
+dependencies:
+  - role: resmo.ntp
+    ntp_config_server:
+      - server 0.fr.pool.ntp.org
+      - server 1.fr.pool.ntp.org
+      - server 2.fr.pool.ntp.org
+      - server 3.fr.pool.ntp.org
+    tags:
+      - common_install

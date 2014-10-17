@@ -1,0 +1,16 @@
+---
+
+# Common
+app_name: bdxio-web
+app_user: 'bdxio'
+app_user_home: '/home/bdxio'
+app_locale: 'fr_FR.UTF-8'
+
+# Database
+app_db_name: "bdxio"
+app_db_user: "bdxio"
+app_db_password: "bdxio"
+
+# Web
+app_ruby_version: "2.1.3"
+

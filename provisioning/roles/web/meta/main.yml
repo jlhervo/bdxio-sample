@@ -1,0 +1,11 @@
+---
+
+dependencies:
+  - role: rvm_io.rvm1-ruby
+    sudo: yes
+    rvm1_rubies:
+      - "ruby-{{ app_ruby_version }}"
+    rvm1_install_flags: '--auto-dotfiles --user-install'
+    rvm1_install_path: '/home/{{ app_user }}/.rvm'
+    tags:
+      - web_install
